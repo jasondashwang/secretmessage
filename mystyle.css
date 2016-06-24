@@ -1,0 +1,31 @@
+body#test1{
+    background-color:  #ff3333;
+}
+
+body#test2{
+    background-color:  #1a53ff;
+}
+
+body#test3{
+    background-color:  #53c653;
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Cutive Mono' ;
+    font-size: 50px;
+}
+
+
+#header {
+  margin-top: 15%;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+
+}
