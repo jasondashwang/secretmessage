@@ -1,10 +1,24 @@
 var express = require('express');
-
+var path = require('path');
 var app = new express();
 
+app.use(express.static(path.join(__dirname)));
+
+
 app.get('/', function (req, res, next){
-  res.send('Hi');
+  res.sendFile(path.join(__dirname+'/views/index.html'));
+
+  // When something happens right redirect to next thing /test2
 });
+
+app.get('/test2', function (req, res, next){
+  res.sendFile(path.join(__dirname+'/views/test2.html'));
+});
+
+app.get('/test3', function (req, res, next){
+  res.sendFile(path.join(__dirname+'/views/test3.html'));
+});
+
 
 
 app.listen(3000, function(){
