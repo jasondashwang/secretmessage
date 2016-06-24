@@ -11,8 +11,19 @@ app.get('/', function (req, res, next){
   // When something happens right redirect to next thing /test2
 });
 
+app.post('/', function(req, res, next){
+  console.log('I got a post request!');
+  res.end();
+});
+
+
 app.get('/test2', function (req, res, next){
   res.sendFile(path.join(__dirname+'/views/test2.html'));
+});
+
+app.post('/test2', function(req, res, next){
+
+
 });
 
 app.get('/test3', function (req, res, next){
